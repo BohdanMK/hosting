@@ -1,0 +1,10 @@
+@mixin title {
+    font-family: 'Roboto', sans-serif;
+    color: $black;
+}
+
+@mixin breakpoint($br) {
+    @media (max-width: $br) {
+        @content;
+    }
+}

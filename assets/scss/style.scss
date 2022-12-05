@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+	position: relative;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, html {
+    background: rgb(49, 42, 77);
+    font-family: 'PT Sans', sans-serif;
+
+	position: relative;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+@import "block/_vars.scss";
+@import "block/_mixin.scss";
+
+
+@import "block/header.scss";
+@import "block/intro.scss";
+@import "block/navbar.scss";
+@import "block/btn.scss";
+@import "block/services.scss";
+@import "block/search.scss";
+@import "block/form.scss";
+@import "block/instruction.scss";
+@import "block/features.scss";
+@import "block/plans.scss";
+@import "block/plan.scss";
+@import "block/testimonials.scss";
+@import "block/blog.scss";
+@import "block/map.scss";
+@import "block/social.scss";
+@import "block/footer.scss";
+@import "block/burger.scss";
+@import "block/swiper.scss";
+@import "block/sign.scss";

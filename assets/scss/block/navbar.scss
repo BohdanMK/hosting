@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint($tablet) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+        padding: 20px;
+
+
+        transform: translateX(-100%);
+        opacity: 0;
+
+        background-color: rgba(41, 44, 52, 0.9);
+
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 100;
+
+        transition: all .3s linear;
+
+        &.active {
+            transform: translateX(0);
+            opacity: 1;
+            transition: all .3s linear;
+        }
+    }
+
+
+
+    &__link {
+
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+
+        margin-left: 15px;
+        text-decoration: none;
+
+        @include breakpoint($laptop) {
+            margin-left: 12px;
+        }
+
+        @include breakpoint($tablet) {
+            transition: all .2s linear;
+            &:hover {
+                transition: all .2s linear;
+                font-weight: 700;
+                transform: translateX(10px);
+            }
+
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $white;
+
+            transition: all .2s linear;
+        }
+        &:hover::after {
+            width: 100%;
+
+            @include breakpoint($tablet) {
+                width: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.btn {
+    display: block;
+    padding: 17px 32px;
+
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 1px solid $btnhover;
+
+    transition: all .2s linear;
+
+    &:hover {
+        font-weight: 700;
+        background-color: $btnhover;
+    }
+
+    &--input {
+        height: 100%;
+        font-weight: 700;
+        background-color: $btnhover;
+
+        &:hover {
+            background-color: darken($color: $btnhover, $amount: 15%);
+        }
+    }
+
+    &--plan {
+        font-weight: 700;
+        border: none;
+        background-color: #2c3039;
+        cursor: pointer;
+    }
+
+    &--blog,
+    &--hide {
+        margin: 0 auto;
+        padding: 21px 67px;
+        border:none;
+        background-color: #2c3039;
+    }
+
+    &--hide {
+        display: none;
+    }
+}

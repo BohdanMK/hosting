@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <button class="burger" id="burger" type="button">
+                    <span></span>
+                </button>
+                <div class="header__logo">
+                    <a class="header__logo-link" href="index.html">
+                        <img src="assets/images/headerlogo.png" alt="">
+                        <p>nine cloud <span>hosting</span> </p>
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <a data-scroll="hosting" class="navbar__link" href="#">hosting</a>
+                    <a data-scroll="domains" class="navbar__link" href="#">Domains</a>
+                    <a data-scroll="features" class="navbar__link" href="#">features</a>
+                    <a data-scroll="testimonials" class="navbar__link" href="#">testimonials</a>
+                    <a data-scroll="contacts" class="navbar__link" href="#">contacts</a>
+
+                </nav>
+                <button class="btn" data-pop="signIn">Login</button>
+            </div>
+        </div>
+    </header>
+    <!--Intro-->
+    <div class="intro">
+        <div class="container">
+            <div class="intro__wrapper">
+                <h1 class="intro__title">Strength in equality.The power  of dreams
+                </h1>
+                <div class="intro__text">
+                    <p>
+                        Web hosting for $9.95/mo $2.95/mo. Sign up today and also get a free <br>
+                        1-on-1 consultation to help you get started.
+                    </p>
+                </div>
+                    <div class="intro__footer">
+
+                        <button class="btn" data-pop="signUp">Get Started</button>
+                        <a class="intro__footer-link" href="#">Learn more</a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--services-->
+    <div class="services" id="hosting">
+        <div class="container">
+            <div class="services__wrapper">
+                <div class="services__item">
+                    <div class="services__img">
+                        <img src="assets/images/servic1.png" alt="">
+                    </div>
+                    <div class="services__item-body">
+                        <h3 class="services__item-title">99,9% UPtime guarantee</h3>
+                        <p>Disk space in all packages has been increased by ten times! </p>
+                    </div>
+                    <a class="services__item-link" href="">READ MORE</a>
+                </div><!--services-item-->
+                <div class="services__item">
+                    <div class="services__img">
+                        <img src="assets/images/servic2.png" alt="">
+                    </div>
+                    <div class="services__item-body">
+                        <h3 class="services__item-title">Managed Services</h3>
+                        <p>Leave the set up, management and monitoring to us. </p>
+                        <p>Leave the set up, management and monitoring to us. </p>
+                    </div>
+                    <a class="services__item-link" href="">READ MORE</a>
+                </div><!--services-item-->
+                <div class="services__item">
+                    <div class="services__img">
+                        <img src="assets/images/servic3.png" alt="">
+                    </div>
+                    <div class="services__item-body">
+                        <h3 class="services__item-title">Cloud Services</h3>
+                        <p>Reliable, high- performance cloud that meets your changing business demands. </p>
+                    </div>
+                    <a class="services__item-link" href="">READ MORE</a>
+                </div><!--services-item-->
+
+            </div>
+        </div> <!--container-->
+    </div>
+
+    <!--search-->
+    <section class="search" id="domains">
+        <div class="container">
+            <div class="search__wrapper">
+                <div class="search__head">
+                    <h2>Search Domain</h2>
+                    <div class="search__head-text">
+                        <p>Save big on domain options like .com, .co, .biz, .net, .org and grab new domains like .xyz,
+                            .club, .guru, .email, .link, .today, and more!</p>
+                    </div>
+                </div>
+                <div class="search__body">
+                    <form class="form" action="/" method="post">
+                        <input class="form__intup" type="text" placeholder="domain.com">
+                        <button type="button" class="btn btn--input">find domain</button>
+                    </form>
+                </div>
+                <div class="search__footer">
+                    <div class="search__instructions">
+                        <div class="instruction">
+                            <div class="instruction__item">
+                                <div class="instruction__img">
+                                    <img src="assets/images/instruction1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="instruction__title">find domain</h3>
+                                    <div class="instruction__text">
+                                        <p>Etiam efficitur, risus sit amet sodales laoreet, sem mauris interdum lectus, nec luctus est.</p>
+                                    </div>
+                                </div>
+                            </div> <!--Instruction__item-->
+                            <div class="instruction__item">
+                                <div class="instruction__img">
+                                    <img src="assets/images/instruction2.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="instruction__title">choose a plan</h3>
+                                    <div class="instruction__text">
+                                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+                                    </div>
+                                </div>
+                            </div> <!--Instruction__item-->
+                            <div class="instruction__item">
+                                <div class="instruction__img">
+                                    <img src="assets/images/instruction3.svg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="instruction__title">build your website</h3>
+                                    <div class="instruction__text">
+                                        <p>Curabitur imperdiet enim id faucibus sollicitudin. </p>
+                                    </div>
+                                </div>
+                            </div> <!--Instruction__item-->
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!--search__wrapper-->
+        </div> <!--container-->
+    </section>
+
+    <!--Features-->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="features__title">Features</h2>
+            <div class="features__wrapper">
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="assets/images/features/hurt.png" alt="">
+                    </div>
+                    <div class="features__info">
+                        <h3>Made with love</h3>
+
+                        <div class="features__text">
+                            <p>Curabitur imperdiet enim id faucibus sollicitudin. </p>
+                        </div>
+                    </div>
+                </div> <!--Features__item-->
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="assets/images/features/data.png" alt="">
+                    </div>
+                    <div class="features__info">
+                        <h3>Databases</h3>
+
+                        <div class="features__text">
+                            <p>Curabitur imperdiet enim id faucibus sollicitudin.  </p>
+                        </div>
+                    </div>
+                </div> <!--Features__item-->
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="assets/images/features/vpn.png" alt="">
+                    </div>
+                    <div class="features__info">
+                        <h3>Made with love</h3>
+
+                        <div class="features__text">
+                            <p>Curabitur imperdiet enim id faucibus sollicitudin. </p>
+                        </div>
+                    </div>
+                </div> <!--Features__item-->
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="assets/images/features/securety.png" alt="">
+                    </div>
+                    <div class="features__info">
+                        <h3>Fully secured</h3>
+
+                        <div class="features__text">
+                            <p>Phasellus aliquam arcu quis lectus aliquam efficitur. </p>
+                        </div>
+                    </div>
+                </div> <!--Features__item-->
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="assets/images/features/daily.png" alt="">
+                    </div>
+                    <div class="features__info">
+                        <h3>Daily backups</h3>
+
+                        <div class="features__text">
+                            <p>Aliquam nisl lectus, rhoncus nec ex vestibulum.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!--Features__item-->
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="assets/images/features/cloud.png" alt="">
+                    </div>
+                    <div class="features__info">
+                        <h3>Cloud hosted</h3>
+
+                        <div class="features__text">
+                            <p>Etiam sagittis tellus at lacus cursus, non molestie nulla.</p>
+                        </div>
+                    </div>
+                </div> <!--Features__item-->
+            </div>
+        </div>
+    </section>
+
+    <!--Plans-->
+    <section class="plans">
+        <div class="container">
+            <div class="plans__wrapper">
+                <div class="plans__head">
+                    <h2 class="plans__title">Pick your plan</h2>
+                    <div class="plans__subtitle">
+                        <p>Upgrade, downgrade or cancel anytime.</p>
+                    </div>
+                </div>
+
+                    <div class="plans__box swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="plan">
+                                    <div class="plan__head">
+                                        <h3 class="plan__head-title">
+                                            Personal
+                                        </h3>
+                                        <h4 class="plan__head-subtitle">
+                                            Perfect Pack for Small Business
+                                        </h4>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__price">
+                                            <p> <sup>&#36;</sup>25<sub>/mo</sub></p>
+                                        </div>
+                                        <ul class="plan__description">
+                                            <li class="plan__description-item">
+                                                <span>3 Gb</span>
+                                                of storage
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>10</span>
+                                                repositories
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>10</span>
+                                                parked domains
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>25 </span>
+                                                FTP accounts
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn--plan">order now</button>
+                                </div> <!--Plan-->
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="plan">
+                                    <div class="plan__head">
+                                        <h3 class="plan__head-title">
+                                            Personal
+                                        </h3>
+                                        <h4 class="plan__head-subtitle">
+                                            Perfect Pack for Small Business
+                                        </h4>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__price">
+                                            <p> <sup>&#36;</sup>30<sub>/mo</sub></p>
+                                        </div>
+                                        <ul class="plan__description">
+                                            <li class="plan__description-item">
+                                                <span>4 Gb</span>
+                                                of storage
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>12</span>
+                                                repositories
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>10</span>
+                                                parked domains
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>25 </span>
+                                                FTP accounts
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn--plan">order now</button>
+                                </div> <!--Plan-->
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="plan">
+                                    <div class="plan__head">
+                                        <h3 class="plan__head-title">
+                                            Personal
+                                        </h3>
+                                        <h4 class="plan__head-subtitle">
+                                            Perfect Pack for Small Business
+                                        </h4>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__price">
+                                            <p> <sup>&#36;</sup>35<sub>/mo</sub></p>
+                                        </div>
+                                        <ul class="plan__description">
+                                            <li class="plan__description-item">
+                                                <span>5Gb</span>
+                                                of storage
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>15</span>
+                                                repositories
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>10</span>
+                                                parked domains
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>25 </span>
+                                                FTP accounts
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn--plan">order now</button>
+                                </div> <!--Plan-->
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="plan">
+                                    <div class="plan__head">
+                                        <h3 class="plan__head-title">
+                                            Personal
+                                        </h3>
+                                        <h4 class="plan__head-subtitle">
+                                            Perfect Pack for Small Business
+                                        </h4>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__price">
+                                            <p> <sup>&#36;</sup>40<sub>/mo</sub></p>
+                                        </div>
+                                        <ul class="plan__description">
+                                            <li class="plan__description-item">
+                                                <span>7 Gb</span>
+                                                of storage
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>18</span>
+                                                repositories
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>10</span>
+                                                parked domains
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>25 </span>
+                                                FTP accounts
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn--plan">order now</button>
+                                </div> <!--Plan-->
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="plan">
+                                    <div class="plan__head">
+                                        <h3 class="plan__head-title">
+                                            Personal
+                                        </h3>
+                                        <h4 class="plan__head-subtitle">
+                                            Perfect Pack for Small Business
+                                        </h4>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__price">
+                                            <p> <sup>&#36;</sup>55<sub>/mo</sub></p>
+                                        </div>
+                                        <ul class="plan__description">
+                                            <li class="plan__description-item">
+                                                <span>30 Gb</span>
+                                                of storage
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>30</span>
+                                                repositories
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>10</span>
+                                                parked domains
+                                            </li>
+                                            <li class="plan__description-item">
+                                                <span>25 </span>
+                                                FTP accounts
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn--plan">order now</button>
+                                </div> <!--Plan-->
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div> <!--plans__box-->
+
+                <div class="plans__footer">
+                    <button class="plans__footer-btn" type="button">
+                        If you need help finding a plan that’s right for you,
+                        just <span>chat with a live person.</span>
+                    </button>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div> <!--plans__wrapper-->
+        </div> <!--container-->
+    </section>
+
+    <!--Testimonials-->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials__wrapper">
+                <h2 class="testimonials__title">Testimonials</h2>
+                <div class="testimonials__text">
+                    <p>Couple of words about this section</p>
+                </div>
+                <div class="testimonials__box swiper">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide">
+                                <div class="testimonials__item">
+                                <div class="testimonials__text">
+                                    <img src="assets/images/features/testemonialimg.svg" alt="">
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                </div>
+                                <div class="testimonials__autor">
+                                    <img  src="assets/images/features/autor.png" alt="">
+                                    <div class="testimonials__autor-name">
+                                        <p>Oscar Wild</p>                                <span>Pragmatic Solutions</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials__item">
+                                <div class="testimonials__text">
+                                    <img src="assets/images/features/testemonialimg.svg" alt="">
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                </div>
+                                <div class="testimonials__autor">
+                                    <img  src="assets/images/features/autor.png" alt="">
+                                    <div class="testimonials__autor-name">
+                                        <p>Oscar Wild</p>                                <span>Pragmatic Solutions</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials__item">
+                                <div class="testimonials__text">
+                                    <img src="assets/images/features/testemonialimg.svg" alt="">
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                </div>
+                                <div class="testimonials__autor">
+                                    <img  src="assets/images/features/autor.png" alt="">
+                                    <div class="testimonials__autor-name">
+                                        <p>Oscar Wild</p>                                <span>Pragmatic Solutions</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials__item">
+                                <div class="testimonials__text">
+                                    <img src="assets/images/features/testemonialimg.svg" alt="">
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                    <p>The best and most reliable VPS account I have experienced from happy-hosting. I have never expected to have such a reliable host. Thanks to them very much for their unparalleled services with excellent administration.</p>
+                                </div>
+                                <div class="testimonials__autor">
+                                    <img  src="assets/images/features/autor.png" alt="">
+                                    <div class="testimonials__autor-name">
+                                        <p>Oscar Wild</p>                                <span>Pragmatic Solutions</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--blog-->
+    <section class="blog">
+        <div class="container">
+            <div class="blog__wrapper">
+                <h2 class="blog__title">Company Blog</h2>
+                <div class="blog__box">
+                    <div class="blog__item">
+                        <article class="blog__article">
+                            <h3 class="blog__article-title">How does the Internet Create Potential</h3>
+                            <div class="blog__article-info">
+                                <time datetime="2014-01-06">06 January, 2014</time>
+                                <div class="blog__article-comments">
+                                    <span>6</span>
+                                    <p>comments</p>
+                                </div>
+                                <div class="blog__article-like">
+                                    <img src="assets/images/hurt-commets.png" alt="">
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            <div class="blog__article-text">
+                                <p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... </p>
+                                <a href="">Read More</a>
+                            </div>
+                        </article>
+                        <div class="blog__auto">
+                            <img class="blog__auto-img" src="assets/images/autor/autor1.jpg" alt="">
+                        </div>
+                    </div> <!--blog__item-->
+                    <div class="blog__item">
+                        <article class="blog__article">
+                            <h3 class="blog__article-title">How does the Internet Create Potential</h3>
+                            <div class="blog__article-info">
+                                <time datetime="2014-01-06">06 January, 2014</time>
+                                <div class="blog__article-comments">
+                                    <span>6</span>
+                                    <p>comments</p>
+                                </div>
+                                <div class="blog__article-like">
+                                    <img src="assets/images/hurt-commets.png" alt="">
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            <div class="blog__article-text">
+                                <p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... </p>
+                                <a href="">Read More</a>
+                            </div>
+                        </article>
+                        <div class="blog__auto">
+                            <img class="blog__auto-img" src="assets/images/autor/autor3.png" alt="">
+                        </div>
+                    </div> <!--blog__item-->
+                    <div class="blog__item">
+                        <article class="blog__article">
+                            <h3 class="blog__article-title">How does the Internet Create Potential</h3>
+                            <div class="blog__article-info">
+                                <time datetime="2014-01-06">06 January, 2014</time>
+                                <div class="blog__article-comments">
+                                    <span>6</span>
+                                    <p>comments</p>
+                                </div>
+                                <div class="blog__article-like">
+                                    <img src="assets/images/hurt-commets.png" alt="">
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            <div class="blog__article-text">
+                                <p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... </p>
+                                <a href="">Read More</a>
+                            </div>
+                        </article>
+                        <div class="blog__auto">
+                            <img class="blog__auto-img" src="assets/images/autor/autor2.jpg" alt="">
+                        </div>
+                    </div> <!--blog__item-->
+                    <div class="blog__item">
+                        <article class="blog__article">
+                            <h3 class="blog__article-title">How does the Internet Create Potential</h3>
+                            <div class="blog__article-info">
+                                <time datetime="2014-01-06">06 January, 2014</time>
+                                <div class="blog__article-comments">
+                                    <span>6</span>
+                                    <p>comments</p>
+                                </div>
+                                <div class="blog__article-like">
+                                    <img src="assets/images/hurt-commets.png" alt="">
+                                    <p>12</p>
+                                </div>
+                            </div>
+                            <div class="blog__article-text">
+                                <p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... </p>
+                                <a href="">Read More</a>
+                            </div>
+                        </article>
+                        <div class="blog__auto">
+                            <img class="blog__auto-img" src="assets/images/autor/autor3.png" alt="">
+                        </div>
+                    </div> <!--blog__item-->
+                </div>
+                <button class="btn btn--blog" type="button">show more</button>
+                <button class="btn btn--hide" type="button">Hide</button>
+            </div>
+        </div>
+    </section>
+
+    <!--map-->
+
+    <div class="map" id="contacts">
+        <div class="container">
+            <div class="map__wrapper">
+                <h3 class="map__title">
+                    We are interested <br>
+                    in long-term cooperation
+                </h3>
+                <address class="map__address">
+                    <a class="map__address-link" href="#">
+                        100 William Street <br>
+                        New York, New York 10038
+                    </a>
+                    <div class="map__open-time">
+                        <span>Mon – Fri , 8 am – 5 pm</span>
+                    </div>
+                    <div class="map__contacts">
+                        <div class="map__tel">
+                            <a href="tel:8006389996" >800-638-9996 </a>,
+                            <a href="tel:5182924500">518-292-4500</a>
+                        </div>
+                        <div class="map__mail">
+                            <a href="mailto:info@somecompany.com">info@somecompany.com</a>
+                        </div>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </div>
+
+    <!--social-->
+    <div class="social">
+        <div class="container">
+            <div class="social__wrapper">
+                <div class="social__block">
+                    <h5 class="social__block-title">Follow us on</h5>
+                    <ul class="social__block-list">
+                        <li class="social__block-item">
+                            <a class="social__block-link" href="">
+                                <img class="social__block-img" src="assets/images/social/twiter.svg" alt="">
+                            </a>
+                        </li> <!--social__block-item-->
+                        <li class="social__block-item">
+                            <a class="social__block-link" href="">
+                                <img class="social__block-img" src="assets/images/social/facebook.svg" alt="">
+                            </a>
+                        </li> <!--social__block-item-->
+                        <li class="social__block-item">
+                            <a class="social__block-link" href="">
+                                <img class="social__block-img" src="assets/images/social/linkedin.svg" alt="">
+                            </a>
+                        </li> <!--social__block-item-->
+                        <li class="social__block-item">
+                            <a class="social__block-link" href="">
+                                <img class="social__block-img" src="assets/images/social/instagram.svg" alt="">
+                            </a>
+                        </li> <!--social__block-item-->
+                    </ul> <!--social__block-list-->
+                </div>  <!--social__block-->
+                <div class="social__subscribe">
+                    <h5 class="social__block-title" >subscribe</h5>
+                    <form class="social__subscribe-form" action="/">
+                        <input class="social__subscribe-input" type="text" placeholder="Enter your e-mail here">
+                        <button class="btn btn--input">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__block">
+                    <button data-spoiler="solutions" type="button" class="footer__block-title">Solutions</button>
+                    <ul class="footer__list" id="solutions">
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Web Solutions Overview</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Email Marketing</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Website Promotion</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">eCommerce Website</a>
+                        </li>
+                    </ul>
+                </div> <!--footer__block-->
+                <div class="footer__block">
+                    <button data-spoiler="services" type="button" class="footer__block-title">Services</button>
+                    <ul class="footer__list" id="services">
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Shared Hosting</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Reseller Hosting</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Cloud Managed VPS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Dedicated Servers</a>
+                        </li>
+                    </ul>
+                </div> <!--footer__block-->
+                <div class="footer__block">
+                    <button data-spoiler="support" type="button" class="footer__block-title">Support</button>
+                    <ul class="footer__list" id="support">
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Knowledge Base</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Support Request</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Client Area</a>
+                        </li>
+                    </ul>
+                </div> <!--footer__block-->
+                <div class="footer__block">
+                    <button data-spoiler="legal-terms" type="button" class="footer__block-title">Legal Terms</button>
+                    <ul class="footer__list" id="legal-terms">
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Terms of Use</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div> <!--footer__block-->
+                <div class="footer__block footer__block--contact">
+                    <div class="footer__contact">
+                        <a class="footer__contact-tel" href="tel:0443834389">(044) 383 4389</a>
+                        <a class="footer__contact-mail" href="mailto:support@cloudhost.com">support@cloudhost.com</a>
+                    </div>
+                    <div class="footer__copyright">
+                         Copyright © 2015 Cloud Host.All rights reserved.
+                    </div>
+                </div> <!--footer__block-->
+            </div>
+        </div>
+    </div>
+
+    <!--Sign-up-->
+    <div class="sign" id="signUp">
+        <div class="container">
+            <div class="sign__wrapper">
+                <div class="sign__block">
+                    <h5>Registration</h5>
+                    <form class="sign__form" action="/" method="post">
+                        <input type="text"  placeholder="Name">
+                        <input type="email" placeholder="@Email">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Repeat Password">
+                    </form>
+                    <button class="btn">Confirm</button>
+                    <div class="sign__check-form">
+                        <span class="sign__check"></span>
+                        <form action="/">
+                            <label class="sign__label" for="checkbox">
+                                I agree to the terms and conditions of the site</label>
+                            <input class="sign__chekbox" type="checkbox"  id="checkbox">
+                        </form>
+                    </div>
+                    <a data-relink="signIn" class="sign__have-account" href="#">Sign in?</a>
+                    <a data-relink="remember"  class="sign__forgot-password" href="#">Forgot password?</a>
+
+                    <button class="sign__close">
+                        <span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Sign-in-->
+    <div class="sign" id="signIn">
+        <div class="container">
+            <div class="sign__wrapper">
+                <div class="sign__block">
+                    <h5>Enter</h5>
+                    <form class="sign__form" action="/" method="post">
+                        <input type="email" placeholder="@Email">
+                        <input type="password" placeholder="Password">
+                    </form>
+                    <!--<div class="sign__check-form"  >
+                        <label class="sign__label" for="checkbox">
+                            I agree to the terms and conditions of the site</label>
+                        <input class="sign__chekbox" type="checkbox" name="" id="checkbox">
+                        <span class="sign__check"></span>
+                    </div>-->
+                    <button class="btn">Enter</button>
+                    <a data-relink="signUp"  class="sign__make-registr" href="#">Sign up?</a>
+                    <a data-relink="remember" class="sign__forgot-password" href="#">Forgot password?</a>
+
+                    <button class="sign__close">
+                        <span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Sign-remember-->
+    <div class="sign"  id="remember">
+        <div class="container">
+            <div class="sign__wrapper">
+                <div class="sign__block">
+                    <h5>Recover</h5>
+                    <form class="sign__form" action="/" method="post">
+                        <input type="email" placeholder="@Email">
+                    </form>
+                    <button class="btn">recover</button>
+                    <!--<div class="sign__check-form"  >
+                        <label class="sign__label" for="checkbox">
+                            I agree to the terms and conditions of the site</label>
+                        <input class="sign__chekbox" type="checkbox" name="" id="checkbox">
+                        <span class="sign__check"></span>
+                    </div>-->
+                    <a data-relink="signUp"  class="sign__make-registr" href="#">Sign up</a>
+                    <a data-relink="signIn" class="sign__have-account" href="#">Sign in</a>
+
+                    <button class="sign__close">
+                        <span></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

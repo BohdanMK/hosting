@@ -1,0 +1,29 @@
+
+.swiper{
+
+    &-wrapper {
+        padding: 0 0 35px 0;
+    }
+    &-pagination{
+
+        &-bullet {
+            width: 15px;
+            height: 15px;
+            border-radius: 0;
+
+            background-color: darken($color: #fff, $amount: 25%);
+
+            &-active {
+                background: #2a2e36;
+            }
+        }
+
+        &.active {
+            z-index: 100;
+        }
+    }
+}
+
+.plans__box.swiper {
+    padding-bottom: 40px;
+}

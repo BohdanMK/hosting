@@ -1,0 +1,46 @@
+.instruction {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 41px;
+
+    @include breakpoint($tablet) {
+        grid-column-gap: 10px;
+    }
+
+    @include breakpoint($mobile) {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 25px;
+    }
+
+    @include breakpoint($sm-mobile){
+        grid-template-columns: 1fr;
+    }
+    &__item {
+        display: inline-flex;
+        column-gap: 38px;
+
+        @include breakpoint($tablet) {
+            column-gap: 15px;
+        }
+    }
+
+    &__title {
+        color: #5e5e5e;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+
+        margin-bottom: 10px;
+    }
+
+    &__text p {
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        color: #616161;
+    }
+}
+

@@ -1,0 +1,77 @@
+.map {
+    display: block;
+    height: 100vh;
+    background: url(../images/map/map.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &__wrapper {
+        width: 100%;
+        max-width: 415px;
+
+        padding-top: 179px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        @include title;
+        font-size: 30px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 40px;
+    }
+
+    &__address {
+        &-link {
+            display: block;
+            margin-bottom: 35px;
+
+            color: $black;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 20px;
+            text-decoration: none;
+        }
+    }
+
+    &__open-time {
+        margin-bottom: 15px;
+
+        font-size: 12px;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+    &__contacts {
+        display: flex;
+        column-gap: 39px;
+
+        font-size: 14px;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+
+    }
+
+    &__tel {
+        & a {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+
+    &__mail {
+        & a {
+            color: $btnhover;
+            text-decoration: none;
+        }
+    }
+}

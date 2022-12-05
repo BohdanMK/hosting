@@ -1,0 +1,35 @@
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
+    &__intup {
+        display: block;
+        width: 75%;
+        height: 100%;
+
+        padding-left: 15px;
+
+        border: none;
+        outline: none;
+
+        color: #8a8a8a;
+
+        &::placeholder {
+            color: #8a8a8a;
+            font-family: "PT Sans";
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+        }
+    }
+
+
+}

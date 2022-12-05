@@ -1,0 +1,147 @@
+.footer {
+    background: $white;
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items:flex-start;
+
+        row-gap: 20px;
+        padding: 25px 0;
+
+
+        @include breakpoint($tablet) {
+            display: block;
+        }
+    }
+
+    &__block {
+        position: relative;
+
+        &--contact {
+
+            @include breakpoint($mobile){
+                text-align: center;
+            }
+
+        }
+
+        &-title {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 0;
+
+            font-family: "PT Sans";
+            font-size: 12px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            position: relative;
+
+            &.open {
+                &::after {
+                    transform: rotateX(180deg)
+                }
+            }
+
+            @include breakpoint($tablet) {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 15px 10px 0 10px;
+                    border-color: #030b14 transparent transparent transparent;
+
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 2;
+
+
+                }
+
+            }
+
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+
+
+        &.open {
+            padding-bottom: 25px;
+
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+
+            transition: all .2s linear;
+        }
+
+        @include breakpoint($tablet) {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+
+            transition: all .2s linear;
+        }
+    }
+
+    &__link {
+        display: block;
+
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+
+    &__contact {
+        margin-top: 5px;
+
+        &-tel {
+            color: #2c3039;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        &-mail {
+            color: #e84c3d;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+
+    &__copyright {
+        margin-top: 15px;
+
+        color: #2c3039;
+        font-family: "PT Sans";
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+    }
+
+}

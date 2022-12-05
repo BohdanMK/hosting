@@ -1,0 +1,79 @@
+.services {
+    background-color: #2b2f37;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include breakpoint($mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+
+        text-align: center;
+        padding: 58px 40px;
+
+        @include breakpoint($laptop) {
+            padding: 38px 20px;
+        }
+
+        @include breakpoint($tablet) {
+            padding: 18px 10px;
+        }
+
+        @include breakpoint($mobile) {
+            padding: 18px 70px;
+        }
+
+
+
+        &:hover {
+            background-color: #272b33;
+        }
+
+        &-title {
+            margin-bottom: 15px;
+
+            font-size: 20px;
+            font-weight: 700;
+            color: $white;
+            text-transform: uppercase;
+
+        }
+
+        &-body {
+            flex: 1 1 auto;
+            & p {
+                margin-bottom: 25px;
+
+                font-size: 16px;
+                color: #6f798c;
+            }
+
+            @include breakpoint ($laptop) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-link {
+            display: block;
+            font-size: 14px;
+            color: #e84c3d;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: darken($color: #e84c3d, $amount: 5%);
+            }
+        }
+    }
+
+    &__img {
+        height: 68px;
+        margin-bottom: 15px;
+    }
+}
